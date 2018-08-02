@@ -20,6 +20,10 @@ fn list() {
 		use ::k8s_openapi::v1_11::api::apps::v1 as apps;
 		use ::k8s_openapi::v1_11::apimachinery::pkg::util as util;
 	}
+	k8s_if_1_12! {
+		use ::k8s_openapi::v1_12::api::apps::v1 as apps;
+		use ::k8s_openapi::v1_12::apimachinery::pkg::util as util;
+	}
 
 	let client = ::Client::new().expect("couldn't create client");
 
